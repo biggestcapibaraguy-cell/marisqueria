@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Titillium Web", sans-serif;
+    background-color: rgb(248, 238, 201);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   HEADER Y NAVEGACIÓN
+   ========================================== */
+
+.header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.logo {
+    color: navy;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu .navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu .navbar ul li a {
+    font-size: 20px;
+    padding: 15px 20px;
+    color: navy;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover {
+    color: #0F172A;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Iconos alineados a la derecha del menú */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    color: navy;
+    cursor: pointer;
+}
+
+.icons a {
+    color: navy;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #0F172A;
+}
+
+/* ==========================================
+   HERO CONTENT
+   ========================================== */
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.header-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.header-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.header-txt {
+    width: 100%;
+    max-width: 600px;
+}
+
+.header-txt h2 {
+    font-size: 65px;
+    line-height: 1.05;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+.header-txt h1 {
+    font-size: 65px;
+    line-height: 1.05;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-1,
+.btn-2 {
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: navy;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: "Oswald", sans-serif;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    background-color: blue;
+    transform: translateX(-2px);
+}
+
+/* ==========================================
+   SECCIÓN DE PRECIOS
+   ========================================== */
+
+.price {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    clear: both;
+}
+
+.price-1 {
+    background: linear-gradient(145deg, navy, blue);
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    min-height: 280px;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    position: relative;
+}
+
+.price-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 255, 0.3);
+}
+
+.price-1 h3 {
+    color: #ecae32;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.price-1 p {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: "Oswald", sans-serif;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+/* ==========================================
+   SECCIÓN SOBRE NOSOTROS Y GALERÍA (LADO A LADO)
+   ========================================== */
+
+.about-galeria-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+    margin: 60px auto;
+    width: 90%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.about-block {
+    flex: 1;
+    min-width: 320px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 128, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-txt h2 {
+    font-size: 38px;
+    color: navy;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-txt h3 {
+    font-size: 20px;
+    color: #ecae32;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 15px;
+}
+
+.about-txt p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.galeria-side {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria-side h2 {
+    font-size: 38px;
+    color: navy;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.galeria-side-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.galeria-item {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 128, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.galeria-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.galeria-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 128, 0.2);
+}
+
+.galeria-item:hover .galeria-item-img img {
+    transform: scale(1.08);
+}
+
+/* ==========================================
+   SECCIÓN DE RESERVACIONES (TEXTO A LA IZQ Y FORMULARIO A LA DER)
+   ========================================== */
+
+.reserva-section {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.reserva-section .hero-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.reserva-container {
+    flex: 1;
+    min-width: 320px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 128, 0.1);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.reserva-container h2 {
+    color: navy;
+    font-size: 32px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.reserva-container p.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: navy;
+    margin-bottom: 25px;
+    font-family: "Oswald", sans-serif;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: navy;
+    font-weight: 600;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.input-group label i {
+    color: navy;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid navy;
+    background-color: rgb(248, 238, 201);
+    color: navy;
+    font-size: 15px;
+    font-family: "Titillium Web", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus, 
+.input-group select:focus {
+    outline: none;
+    border-color: navy;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 128, 0.2);
+}
+
+#btnReservar {
+    width: 100%;
+    padding: 14px;
+    background-color: navy;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#btnReservar:hover {
+    background-color: blue;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.footer {
+    padding: 30px 0;
+    background-color: navy;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-content a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #ecae32;
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        margin-top: 100px;
+    }
+
+    .header-txt h1,
+    .header-txt h2 {
+        font-size: 45px;
+    }
+
+    .about-galeria-container,
+    .reserva-section .hero-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-block,
+    .galeria-side,
+    .reserva-container {
+        width: 100%;
+    }
+
+    .price {
+        justify-content: center;
+    }
+}
+
+/* Celulares (<= 768px) */
+@media (max-width: 768px) {
+    /* Menú Hamburguesa */
+    .menu label {
+        display: block;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(248, 238, 201);
+        display: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 15px 15px;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu .navbar ul li a {
+        padding: 12px;
+    }
+
+    #menu:checked ~ .navbar {
+        display: block;
+    }
+
+    /* Tipografía y espacios ajustados */
+    .header-txt h1,
+    .header-txt h2 {
+        font-size: 36px;
+    }
+
+    .about-txt h2,
+    .galeria-side h2,
+    .reserva-container h2 {
+        font-size: 28px;
+    }
+
+    .price-1 {
+        min-width: 100%;
+    }
+
+    .galeria-side-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}

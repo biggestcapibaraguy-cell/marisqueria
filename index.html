@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish n Chips</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- SECCIÓN DE INICIO (id="inicio") -->
+    <header class="header" id="inicio">
+        <div class="menu container">
+            <a href="index.html" class="logo">Fish n Chips</a>
+            
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="Menu">
+            </label>
+
+            <!-- NAVEGACIÓN VINCULADA A CADA ID -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#especialidades">Menu</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#reservar">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-content container">
+            <div class="header-img">
+                <img src="images/pescadillo.jpeg" alt="Fish n Chips Hero">
+            </div>
+
+            <div class="header-txt">
+                <h2>Bienvenido a</h2>
+                <h1>Marisqueria "FISH N CHIPS"</h1>
+                <h3>
+                    En FISH N CHIPS, nos tomamos muy en serio la frescura. Desde nuestros aguachiles perrones y ceviches recién cortados, 
+                    hasta los camarones al mojo de ajo que te hacen volver cada fin de semana.
+                    Acompaña tus mariscos con una cerveza bien fría, salsa de la casa que sí pica y el mejor ambiente para convivir con tus compas o la familia.
+                </h3>
+                <a href="#especialidades" class="btn-1">Menu</a>
+                <a href="#reservar" class="btn-1">Reservaciones</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE PRECIOS / ESPECIALIDADES (id="especialidades") -->
+    <section class="price container" id="especialidades">
+        <div class="price-1">
+            <p>BARRA FRIA Y CALIENTE</p>
+            <h3>Ceviches y Aguachiles</h3>
+        </div>
+
+        <div class="price-1">
+            <p>ESPECIALIDADES</p>
+            <h3>Cazuelas y Tostadas</h3>
+        </div>
+
+        <div class="price-1">
+            <p>PARA ACOMPAÑAR</p>
+            <h3>Cerveza Helada y Micheladas</h3>
+        </div>
+
+        <div class="price-1">
+            <p>SABOR GARANTIZADO</p>
+            <h3>Sazones de la casa</h3>
+        </div>
+    </section>
+
+    <!-- SECCIÓN UNIFICADA: SOBRE NOSOTROS Y GALERÍA (id="nosotros") -->
+    <section class="about-galeria-container container" id="nosotros">
+        
+        <!-- Lado Izquierdo: Sobre Nosotros -->
+        <div class="about-block">
+            <div class="about-img">
+                <img src="images/nosotros.jpg" alt="Nosotros">
+            </div>
+
+            <div class="about-txt">
+                <h2>SOBRE NOSOTROS</h2>
+                <h3>Pasión por el auténtico sabor del mar</h3>
+                <p>
+                    Nacimos con la idea de traer la frescura de la costa a tu mesa. Preparamos cada platillo al momento, combinando sazones tradicionales, mariscos seleccionados y las recetas de la casa para ofrecerte una experiencia llena de sabor, bebidas heladas y el mejor ambiente para compartir.
+                </p>
+                <a href="#especialidades" class="btn-1">Ver Menú</a>
+            </div>
+        </div>
+
+        <!-- Lado Derecho: Galería -->
+        <div class="galeria-side">
+            <h2>NUESTRA GALERÍA</h2>
+            <div class="galeria-side-grid">
+                <div class="galeria-item">
+                    <div class="galeria-item-img">
+                        <img src="images/mar.jpeg" alt="Platillo 1">
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <div class="galeria-item-img">
+                        <img src="images/pulpo.jpeg" alt="Platillo 2">
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <div class="galeria-item-img">
+                        <img src="images/ceviche.jpeg" alt="Platillo 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCIÓN DE RESERVACIONES Y CONTACTO (id="reservar") -->
+    <section class="reserva-section container" id="reservar">
+        <div class="hero-layout">
+            <div class="about-block">
+                <div class="about-txt">
+                    <h2>RESERVACIONES O PREGUNTAS</h2>
+                    <h3>¿Tienes alguna duda o quieres asegurar tu mesa?</h3>
+                    <p>
+                        Completa el formulario y te confirmaremos directamente por WhatsApp. También puedes contactarnos para eventos especiales o banquetes familiares.
+                    </p>
+                    <a href="#especialidades" class="btn-1">Ver Menú</a>
+                </div>
+            </div>
+
+            <div class="reserva-container">
+                <h2>Reserva tu Mesa</h2>
+                <p class="subtitle">Confirma tu asistencia directamente por WhatsApp</p>
+                
+                <form id="reservaForm">
+                    <div class="input-group">
+                        <label for="nombre"><i class="fa-solid fa-user"></i> Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Ej. Carlos Mendoza" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="fecha"><i class="fa-solid fa-calendar-days"></i> Fecha de reservación</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="personas"><i class="fa-solid fa-users"></i> Número de invitados</label>
+                        <select id="personas" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="2 a 4 personas">2 a 4 personas</option>
+                            <option value="5 a 8 personas">5 a 8 personas</option>
+                            <option value="Mesa Familiar / Grupo (8+ personas)">Mesa Familiar / Grupo (8+ personas)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="zona"><i class="fa-solid fa-location-dot"></i> Zona de preferencia</label>
+                        <select id="zona" required>
+                            <option value="" disabled selected>Selecciona una zona</option>
+                            <option value="Comedor Principal">Comedor Principal</option>
+                            <option value="Terraza">Terraza</option>
+                            <option value="Barra">Barra</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="btnReservar">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i> Reservar por WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CON ENLACES DE DESPLAZAMIENTO -->
+    <footer class="footer">
+        <div class="footer-content container">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#reservar">Contacto</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('reservaForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const fecha = document.getElementById('fecha').value;
+            const personas = document.getElementById('personas').value;
+            const zona = document.getElementById('zona').value;
+
+            const numeroTelefono = "525511458321"; 
+
+            const mensaje = `Hola, me gustaría solicitar una reservación para *Fish n Chips*:%0A%0A` +
+                            `*Nombre:* ${encodeURIComponent(nombre)}%0A` +
+                            `*Fecha:* ${encodeURIComponent(fecha)}%0A` +
+                            `*Invitados:* ${encodeURIComponent(personas)}%0A` +
+                            `*Zona:* ${encodeURIComponent(zona)}`;
+
+            const urlWhatsApp = `https://wa.me/${numeroTelefono}?text=${mensaje}`;
+            window.open(urlWhatsApp, '_blank');
+        });
+    </script>
+</body>
+</html>
